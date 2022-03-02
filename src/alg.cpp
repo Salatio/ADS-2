@@ -48,7 +48,7 @@ double cosn(double x, uint16_t count) {
     else {
         int n = 2 * count - 2;
         if (0 == count % 2) {
-            return -1 * calcItem(x, n) + cosn(c, count - 1);
+            return -1 * calcItem(x, n) + cosn(x, count - 1);
         }
         else {
             return calcItem(x, n) + cosn(x, count - 1);

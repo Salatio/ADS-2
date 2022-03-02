@@ -35,10 +35,8 @@ double sinn(double x, uint16_t count) {
         int n = 2 * count - 1;
         if (0 == count % 2) {
             return -1 * calcItem(x, n) + sinn(x, count - 1);
-        }
-        else {
-            return calcItem(x, n) + sinn(x, count - 1);
-        }
+        } else
+              return calcItem(x, n) + sinn(x, count - 1);
     }
 }
 
@@ -49,9 +47,8 @@ double cosn(double x, uint16_t count) {
         int n = 2 * count - 2;
         if (0 == count % 2) {
             return -1 * calcItem(x, n) + cosn(x, count - 1);
-        }
-        else {
-            return calcItem(x, n) + cosn(x, count - 1);
-        }
+        } else {
+              return calcItem(x, n) + cosn(x, count - 1);
+          }
     }
 }
